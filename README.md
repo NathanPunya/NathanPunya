@@ -1,72 +1,84 @@
 <!-- © Nathan Punyataweekul · https://github.com/NathanPunya -->
-### Hey, I'm Nathan Punyataweekul! <img src="https://cultofthepartyparrot.com/parrots/hd/opensourceparrot.gif" alt="" height="16px"/> ![Hit Count](https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya)
-
-UCLA CS student building software across full-stack, AI/ML, and systems.
-
-Welcome to my open source homepage. Reach out on LinkedIn, or look through the work below.
-
-### Featured
-
-- **[LATTICE](https://github.com/NathanPunya/LATTICE)** — Event-driven limit-order-book simulator for market making
-- **[Zones](https://github.com/NathanPunya/Zones)** — Paper.io-inspired competitive running app in Swift
-- **[Bruin Hot Takes](https://github.com/NathanPunya/bruin-hot-take)** — Real-time campus discussion platform
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&theme=transparent" alt="NathanPunya's GitHub stats"/>
+  <img src="assets/banner.svg" alt="nathan — bid &lt; mid &lt; ask" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square" alt="Hit Count"/>
+</p>
+
+<p align="center">
+  UCLA CS student building software across full-stack, AI/ML, and systems.
+</p>
+
+<p align="center">
+  Welcome to my open source homepage. Reach out on LinkedIn, or look through the work below.
+</p>
+
+<p align="center">
+  <img src="assets/divider.svg" alt="" width="72%"/>
+</p>
+
+<p align="center">
+  <img src="assets/label-featured.svg" alt="Featured" height="40"/>
+</p>
+
+- <img src="assets/mark.svg" alt="" height="16"/> **[LATTICE](https://github.com/NathanPunya/LATTICE)** — Event-driven limit-order-book simulator for market making
+- <img src="assets/mark.svg" alt="" height="16"/> **[Zones](https://github.com/NathanPunya/Zones)** — Paper.io-inspired competitive running app in Swift
+- <img src="assets/mark.svg" alt="" height="16"/> **[Bruin Hot Takes](https://github.com/NathanPunya/bruin-hot-take)** — Real-time campus discussion platform
+
+<p align="center">
+  <img src="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&bg_color=F4F0E6&title_color=3D6F96&text_color=5A5548&icon_color=6B9B6E&ring_color=E6B84D" alt="NathanPunya's GitHub stats"/>
 </p>
 
 <p align="center">
   <img src="assets/google-snake-commits.svg" alt="Google Snake contribution grid"/>
 </p>
 
-### Connect
-
 <p align="center">
-  <a href="https://github.com/NathanPunya"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/nathan-punyataweekul"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
+  <img src="assets/divider.svg" alt="" width="72%"/>
 </p>
 
-### Tools
-
 <p align="center">
-  <a href="https://github.com/NathanPunya?tab=repositories&language=cpp">
-    <img src="https://img.icons8.com/color/64/000000/c-plus-plus-logo.png" alt="C++" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=python">
-    <img src="https://img.icons8.com/color/64/000000/python.png" alt="Python" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=javascript">
-    <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=typescript">
-    <img src="https://img.icons8.com/color/64/000000/typescript.png" alt="TypeScript" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=swift">
-    <img src="https://img.icons8.com/color/64/000000/swift.png" alt="Swift" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=go">
-    <img src="https://img.icons8.com/color/64/000000/golang.png" alt="Go" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=shell">
-    <img src="https://img.icons8.com/color/64/000000/linux.png" alt="Linux" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=html">
-    <img src="https://img.icons8.com/color/64/000000/html-5.png" alt="HTML" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=css">
-    <img src="https://img.icons8.com/color/64/000000/css3.png" alt="CSS" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya/bruin-hot-take">
-    <img src="https://img.icons8.com/color/64/000000/react-native.png" alt="React" width="30px"/>
-  </a>
-  <a href="https://github.com/NathanPunya/bruin-hot-take">
-    <img src="https://img.icons8.com/color/64/000000/nodejs.png" alt="Node.js" width="30px"/>
-  </a>
-  <img src="https://img.icons8.com/color/64/000000/mongodb.png" alt="MongoDB" width="30px"/>
-  <img src="https://img.icons8.com/color/64/000000/amazon-web-services.png" alt="AWS" width="30px"/>
-  <a href="https://github.com/NathanPunya/bruin-hot-take">
-    <img src="https://img.icons8.com/color/64/000000/docker.png" alt="Docker" width="30px"/>
-  </a>
+  <img src="assets/label-connect.svg" alt="Connect" height="40"/>
 </p>
 
-For a more immersive portfolio, check out [my website](https://nathanpunya.github.io/).
+<p align="center">
+  <a href="https://github.com/NathanPunya"><img src="assets/btn-github.svg" alt="GitHub" height="52"/></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/nathan-punyataweekul"><img src="assets/btn-linkedin.svg" alt="LinkedIn" height="52"/></a>
+</p>
+
+<p align="center">
+  <img src="assets/label-tools.svg" alt="Tools" height="40"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/NathanPunya?tab=repositories&language=cpp"><img src="https://img.shields.io/badge/C++-6B9B6E?style=flat-square&logo=cplusplus&logoColor=F4F0E6" alt="C++"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=python"><img src="https://img.shields.io/badge/Python-E6B84D?style=flat-square&logo=python&logoColor=2A2A2A" alt="Python"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=javascript"><img src="https://img.shields.io/badge/JavaScript-D96B5C?style=flat-square&logo=javascript&logoColor=F4F0E6" alt="JavaScript"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=typescript"><img src="https://img.shields.io/badge/TypeScript-5B8EB5?style=flat-square&logo=typescript&logoColor=F4F0E6" alt="TypeScript"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=swift"><img src="https://img.shields.io/badge/Swift-D96B5C?style=flat-square&logo=swift&logoColor=F4F0E6" alt="Swift"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=go"><img src="https://img.shields.io/badge/Go-4A7FA3?style=flat-square&logo=go&logoColor=F4F0E6" alt="Go"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=shell"><img src="https://img.shields.io/badge/Linux-C8C5BC?style=flat-square&logo=linux&logoColor=2A2A2A" alt="Linux"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=html"><img src="https://img.shields.io/badge/HTML-D96B5C?style=flat-square&logo=html5&logoColor=F4F0E6" alt="HTML"/></a>
+  <a href="https://github.com/NathanPunya?tab=repositories&language=css"><img src="https://img.shields.io/badge/CSS-5B8EB5?style=flat-square&logo=css3&logoColor=F4F0E6" alt="CSS"/></a>
+  <a href="https://github.com/NathanPunya/bruin-hot-take"><img src="https://img.shields.io/badge/React-A3C9DC?style=flat-square&logo=react&logoColor=2A2A2A" alt="React"/></a>
+  <a href="https://github.com/NathanPunya/bruin-hot-take"><img src="https://img.shields.io/badge/Node.js-6B9B6E?style=flat-square&logo=nodedotjs&logoColor=F4F0E6" alt="Node.js"/></a>
+  <img src="https://img.shields.io/badge/MongoDB-4F7F54?style=flat-square&logo=mongodb&logoColor=F4F0E6" alt="MongoDB"/>
+  <img src="https://img.shields.io/badge/AWS-E6B84D?style=flat-square&logo=amazonwebservices&logoColor=2A2A2A" alt="AWS"/>
+  <a href="https://github.com/NathanPunya/bruin-hot-take"><img src="https://img.shields.io/badge/Docker-5B8EB5?style=flat-square&logo=docker&logoColor=F4F0E6" alt="Docker"/></a>
+</p>
+
+<p align="center">
+  <img src="assets/divider.svg" alt="" width="72%"/>
+</p>
+
+<p align="center">
+  <em>bid &lt; mid &lt; ask</em>
+</p>
+
+<p align="center">
+  For a more immersive portfolio, check out <a href="https://nathanpunya.github.io/">my website</a>.
+</p>
