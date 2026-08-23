@@ -45,10 +45,7 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg">
-    <img src="assets/google-snake-commits.svg" alt="Google Snake contribution grid"/>
-  </picture>
+  <img src="assets/google-snake-commits.svg" alt="Google Snake contribution grid"/>
 </p>
 
 <p align="center">
