@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 36" role="img" aria-hidden="true">
+  <defs>
+    <pattern id="blueGrid" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#4A7FA3"/>
+      <path d="M7 0H0V7" fill="none" stroke="#E7F1F6" stroke-width="0.6"/>
+    </pattern>
+    <filter id="piece" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0.6" dy="0.8" stdDeviation="0.6" flood-color="#2A2418" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <line x1="16" y1="18" x2="704" y2="18" stroke="#D5CFC0" stroke-width="1"/>
+  <g filter="url(#piece)">
+    <rect x="188" y="11" width="52" height="14" rx="2" fill="#6B9B6E" transform="rotate(-1.2 214 18)"/>
+    <rect x="248" y="10" width="46" height="16" rx="2" fill="#E6B84D" transform="rotate(1.4 271 18)"/>
+    <rect x="300" y="12" width="40" height="12" rx="2" fill="url(#blueGrid)" transform="rotate(-0.8 320 18)"/>
+    <rect x="348" y="10" width="14" height="16" rx="2" fill="#D96B5C" transform="rotate(2 355 18)"/>
+    <g transform="translate(382,8)">
+      <rect x="0" y="0" width="20" height="20" rx="3" fill="#C8C5BC"/>
+      <rect x="9" y="2" width="8" height="4" rx="0.8" fill="#D96B5C"/>
+      <rect x="6" y="7" width="11" height="3" rx="0.8" fill="#E6B84D"/>
+      <rect x="6" y="11" width="11" height="4" rx="0.8" fill="#6B9B6E"/>
+      <rect x="9" y="16" width="8" height="3" rx="0.8" fill="#6B9B6E"/>
+    </g>
+    <rect x="414" y="11" width="48" height="14" rx="2" fill="#5B8EB5" transform="rotate(-1.5 438 18)"/>
+    <rect x="470" y="10" width="36" height="16" rx="2" fill="#6B9B6E" transform="rotate(1.1 488 18)"/>
+    <rect x="514" y="12" width="28" height="12" rx="2" fill="#E6B84D" transform="rotate(-2 528 18)"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LinkedIn">
+  <defs>
+    <pattern id="blueGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#4A7FA3"/>
+      <path d="M8 0H0V8" fill="none" stroke="#E7F1F6" stroke-width="0.65"/>
+    </pattern>
+    <filter id="piece" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0.8" dy="1.1" stdDeviation="0.8" flood-color="#2A2418" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#blueGrid)" filter="url(#piece)"/>
+  <path fill="#F4F0E6" transform="translate(14,14) scale(1.5)" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>

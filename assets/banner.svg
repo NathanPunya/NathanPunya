@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" role="img" aria-labelledby="title desc">
+  <title id="title">Nathan Punyataweekul</title>
+  <desc id="desc">Paper-collage banner: limit-order-book ladder, reservation price, and market-making P&amp;L.</desc>
+  <defs>
+    <pattern id="graph" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#D8D2C3" stroke-width="0.55"/>
+    </pattern>
+    <pattern id="blueGrid" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#4A7FA3"/>
+      <path d="M9 0H0V9" fill="none" stroke="#E7F1F6" stroke-width="0.7"/>
+    </pattern>
+    <pattern id="yellowRules" width="24" height="10" patternUnits="userSpaceOnUse">
+      <rect width="24" height="10" fill="#F0C85A"/>
+      <path d="M0 9.5H24" stroke="#E2B34A" stroke-width="0.7"/>
+    </pattern>
+    <filter id="piece" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1.1" dy="1.6" stdDeviation="1.1" flood-color="#2A2418" flood-opacity="0.18"/>
+    </filter>
+    <filter id="sheet" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#2A2418" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="340" fill="#E8C5BE"/>
+  <rect x="1072" y="18" width="28" height="304" fill="url(#yellowRules)"/>
+  <rect x="18" y="14" width="1058" height="308" rx="2" fill="#F4F0E6" filter="url(#sheet)"/>
+  <rect x="18" y="14" width="1058" height="308" fill="url(#graph)" opacity="0.65"/>
+
+  <!-- faint tape / terminal axes on the right -->
+  <line x1="898" y1="228" x2="1054" y2="228" stroke="#C9C3B4" stroke-width="0.8"/>
+  <line x1="910" y1="92" x2="910" y2="236" stroke="#C9C3B4" stroke-width="0.8"/>
+
+  <text x="48" y="48" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="#2A2A2A">bid &lt; mid &lt; ask</text>
+  <path d="M46 54 Q 130 58 214 53" fill="none" stroke="#2A2A2A" stroke-width="0.7"/>
+
+  <!-- n -->
+  <g filter="url(#piece)" transform="translate(52,90)">
+    <rect x="0" y="0" width="26" height="128" rx="4" fill="#6B9B6E" transform="rotate(-1.5 13 64)"/>
+    <rect x="20" y="2" width="72" height="28" rx="10" fill="#E6B84D" transform="rotate(1.2 56 16)"/>
+    <rect x="68" y="14" width="24" height="114" rx="4" fill="#E6B84D" transform="rotate(1.6 80 71)"/>
+  </g>
+
+  <!-- a : order-book ladder + stem -->
+  <g transform="translate(168,86)" filter="url(#piece)">
+    <rect x="4" y="8" width="118" height="122" rx="6" fill="#C8C5BC" transform="rotate(-1 63 69)"/>
+    <!-- asks -->
+    <rect x="52" y="20" width="34" height="12" rx="2" fill="#D96B5C"/>
+    <rect x="40" y="34" width="46" height="12" rx="2" fill="#D96B5C"/>
+    <rect x="26" y="48" width="60" height="12" rx="2" fill="#C04E42"/>
+    <!-- mid -->
+    <rect x="14" y="64" width="78" height="6" rx="1.5" fill="#E6B84D"/>
+    <!-- bids -->
+    <rect x="26" y="74" width="60" height="12" rx="2" fill="#4F7F54"/>
+    <rect x="40" y="88" width="46" height="12" rx="2" fill="#6B9B6E"/>
+    <rect x="52" y="102" width="34" height="12" rx="2" fill="#6B9B6E"/>
+    <text x="8" y="28" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="11" fill="#2A2A2A">ask</text>
+    <text x="8" y="116" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="11" fill="#2A2A2A">bid</text>
+    <rect x="104" y="18" width="22" height="120" rx="4" fill="#5B8EB5" transform="rotate(1.4 115 78)"/>
+  </g>
+
+  <!-- t -->
+  <g filter="url(#piece)" transform="translate(328,84)">
+    <rect x="34" y="6" width="26" height="134" rx="4" fill="#D96B5C" transform="rotate(1.2 47 73)"/>
+    <rect x="4" y="20" width="90" height="24" rx="4" fill="#E6B84D" transform="rotate(-2 49 32)"/>
+    <rect x="20" y="24" width="56" height="16" rx="2" fill="url(#blueGrid)" transform="rotate(-2 48 32)"/>
+  </g>
+
+  <!-- h -->
+  <g filter="url(#piece)" transform="translate(448,86)">
+    <rect x="0" y="0" width="26" height="132" rx="4" fill="#4F7F54" transform="rotate(-1.4 13 66)"/>
+    <rect x="22" y="48" width="70" height="26" rx="10" fill="#A3C9DC" transform="rotate(1 57 61)"/>
+    <rect x="70" y="54" width="24" height="80" rx="4" fill="#6B9B6E" transform="rotate(1.5 82 94)"/>
+  </g>
+
+  <!-- a : P&amp;L pie + stem -->
+  <g transform="translate(568,90)" filter="url(#piece)">
+    <path d="M62,64 L62,14 A50,50 0 0 1 105.3,89.0 Z" fill="#6B9B6E" stroke="#2A2A2A" stroke-width="1.5"/>
+    <path d="M62,64 L105.3,89.0 A50,50 0 0 1 18.7,89.0 Z" fill="#E6B84D" stroke="#2A2A2A" stroke-width="1.5"/>
+    <path d="M53.3,59 L9.0,84.0 A50,50 0 0 1 53.3,9.0 Z" fill="#5B8EB5" stroke="#2A2A2A" stroke-width="1.5"/>
+    <text x="54" y="56" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="10" fill="#2A2A2A">PnL</text>
+    <rect x="108" y="12" width="22" height="122" rx="4" fill="#D96B5C" transform="rotate(-1.2 119 73)"/>
+  </g>
+
+  <!-- n -->
+  <g filter="url(#piece)" transform="translate(718,90)">
+    <rect x="0" y="0" width="26" height="128" rx="4" fill="#5B8EB5" transform="rotate(1.4 13 64)"/>
+    <rect x="18" y="4" width="72" height="26" rx="10" fill="#6B9B6E" transform="rotate(-1.1 54 17)"/>
+    <rect x="68" y="16" width="24" height="112" rx="4" fill="#6B9B6E" transform="rotate(-1.5 80 72)"/>
+  </g>
+
+  <!-- mid vs fair value tape -->
+  <polyline
+    points="918,200 938,188 952,194 968,168 986,160 1002,146 1020,152 1038,132 1050,138"
+    fill="none" stroke="#5B8EB5" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline
+    points="918,186 940,180 960,176 980,170 1000,166 1020,160 1040,156 1050,154"
+    fill="none" stroke="#8A8476" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <circle cx="1050" cy="138" r="4.5" fill="#D96B5C" stroke="#2A2A2A" stroke-width="1"/>
+  <text x="916" y="86" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="11" fill="#5A5548">V</text>
+  <text x="1036" y="122" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="11" fill="#5A5548">mid</text>
+
+  <text x="56" y="300" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#2A2A2A">
+    r(s, q, t) = s &#8722; q&#947;&#963;&#178;(T&#8722;t)
+  </text>
+  <text x="560" y="300" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#2A2A2A">
+    &#955;(&#948;) = A e<tspan font-size="11" dy="-6">&#8722;k&#948;</tspan>
+  </text>
+</svg>
