@@ -76,9 +76,5 @@
 </p>
 
 <p align="center">
-  <em>bid &lt; mid &lt; ask</em>
-</p>
-
-<p align="center">
   For a more immersive portfolio, check out <a href="https://nathanpunya.github.io/">my website</a>.
 </p>
