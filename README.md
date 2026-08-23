@@ -1,7 +1,10 @@
 <!-- © Nathan Punyataweekul · https://github.com/NathanPunya -->
 
 <p align="center">
-  <img src="assets/banner.svg" alt="nathan — bid &lt; mid &lt; ask" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner.svg" alt="nathan — bid &lt; mid &lt; ask" width="100%"/>
+  </picture>
 </p>
 
 <p align="center">
@@ -17,41 +20,72 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="" width="72%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+    <img src="assets/divider.svg" alt="" width="72%"/>
+  </picture>
 </p>
 
 <p align="center">
-  <img src="assets/label-featured.svg" alt="Featured" height="40"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/label-featured-dark.svg">
+    <img src="assets/label-featured.svg" alt="Featured" height="40"/>
+  </picture>
 </p>
 
-- <img src="assets/mark.svg" alt="" height="16"/> **[LATTICE](https://github.com/NathanPunya/LATTICE)** — Event-driven limit-order-book simulator for market making
-- <img src="assets/mark.svg" alt="" height="16"/> **[Zones](https://github.com/NathanPunya/Zones)** — Paper.io-inspired competitive running app in Swift
-- <img src="assets/mark.svg" alt="" height="16"/> **[Bruin Hot Takes](https://github.com/NathanPunya/bruin-hot-take)** — Real-time campus discussion platform
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> **[LATTICE](https://github.com/NathanPunya/LATTICE)** — Event-driven limit-order-book simulator for market making
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> **[Zones](https://github.com/NathanPunya/Zones)** — Paper.io-inspired competitive running app in Swift
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> **[Bruin Hot Takes](https://github.com/NathanPunya/bruin-hot-take)** — Real-time campus discussion platform
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&bg_color=F4F0E6&title_color=3D6F96&text_color=5A5548&icon_color=6B9B6E&ring_color=E6B84D" alt="NathanPunya's GitHub stats"/>
-</p>
-
-<p align="center">
-  <img src="assets/google-snake-commits.svg" alt="Google Snake contribution grid"/>
-</p>
-
-<p align="center">
-  <img src="assets/divider.svg" alt="" width="72%"/>
-</p>
-
-<p align="center">
-  <img src="assets/label-connect.svg" alt="Connect" height="40"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&bg_color=1E1C18&title_color=8BB8D0&text_color=C8C2B4&icon_color=7FB083&ring_color=E8C05A">
+    <img src="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&bg_color=F4F0E6&title_color=3D6F96&text_color=5A5548&icon_color=6B9B6E&ring_color=E6B84D" alt="NathanPunya's GitHub stats"/>
+  </picture>
 </p>
 
 <p align="center">
-  <a href="https://github.com/NathanPunya"><img src="assets/btn-github.svg" alt="GitHub" height="52"/></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg">
+    <img src="assets/google-snake-commits.svg" alt="Google Snake contribution grid"/>
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+    <img src="assets/divider.svg" alt="" width="72%"/>
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/label-connect-dark.svg">
+    <img src="assets/label-connect.svg" alt="Connect" height="40"/>
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://github.com/NathanPunya">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg">
+      <img src="assets/btn-github.svg" alt="GitHub" height="52"/>
+    </picture>
+  </a>
   &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/nathan-punyataweekul"><img src="assets/btn-linkedin.svg" alt="LinkedIn" height="52"/></a>
+  <a href="https://www.linkedin.com/in/nathan-punyataweekul">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg">
+      <img src="assets/btn-linkedin.svg" alt="LinkedIn" height="52"/>
+    </picture>
+  </a>
 </p>
 
 <p align="center">
-  <img src="assets/label-tools.svg" alt="Tools" height="40"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/label-tools-dark.svg">
+    <img src="assets/label-tools.svg" alt="Tools" height="40"/>
+  </picture>
 </p>
 
 <p align="center">
@@ -72,7 +106,10 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="" width="72%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+    <img src="assets/divider.svg" alt="" width="72%"/>
+  </picture>
 </p>
 
 <p align="center">
