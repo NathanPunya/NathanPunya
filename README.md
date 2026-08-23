@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  UCLA CS student building software across full-stack, AI/ML, and systems.
+  UCLA CS student building software across full-stack, AI/ML, systems, and trading.
 </p>
 
 <p align="center">
