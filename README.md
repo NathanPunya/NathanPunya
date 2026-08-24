@@ -8,7 +8,10 @@
 </p>
 
 <p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square" alt="Hit Count"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square&left_color=%233C3A36&right_color=%23E8C05A">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square&left_color=%23C8C5BC&right_color=%23E6B84D" alt="Hit Count"/>
+  </picture>
 </p>
 
 <p align="center">
