@@ -40,7 +40,7 @@
 - <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> **[Bento](https://github.com/NathanPunya/bento)** — AI benchmarking system for evaluating language models on MMLU
 - <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> **[Zones](https://github.com/NathanPunya/Zones)** — Paper.io-inspired competitive running app in Swift
 - <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> **[Bruin Hot Takes](https://github.com/NathanPunya/bruin-hot-take)** — Real-time campus discussion platform
-- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/google-snake-title-dark.svg"><img src="assets/google-snake-title.svg" alt="Google Snake" height="18" align="absmiddle"/></picture> — GitHub contribution grid replayed on the classic green board, eating commits
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg"><img src="assets/mark.svg" alt="" height="16"/></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/google-snake-title-dark.svg"><img src="assets/google-snake-title.svg" alt="Google Snake" height="17" align="absmiddle"/></picture> — GitHub contribution grid replayed on the classic green board, eating commits
 
 <p align="center">
   <picture>
