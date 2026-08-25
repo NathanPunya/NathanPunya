@@ -9,8 +9,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square&left_color=%233C3A36&right_color=%23E8C05A">
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square&left_color=%23C8C5BC&right_color=%23E6B84D" alt="Hit Count"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square&left_color=%233C3A36&right_color=%23E07A6C">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=NathanPunya.NathanPunya&style=flat-square&left_color=%23C8C5BC&right_color=%23D96B5C" alt="Hit Count"/>
   </picture>
 </p>
 
