@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="118" height="18" viewBox="0 0 118 18" role="img" aria-label="Google Snake">
-  <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#4493f8">Google Snake</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="24" viewBox="0 0 120 24" role="img" aria-label="Google Snake">
+  <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#4493f8">Google Snake</text>
+  <line x1="0" y1="18.5" x2="108" y2="18.5" stroke="#4493f8" stroke-width="1"/>
 </svg>
