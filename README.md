@@ -44,8 +44,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&bg_color=1E1C18&title_color=8BB8D0&text_color=C8C2B4&icon_color=7FB083&ring_color=E8C05A">
-    <img src="https://github-readme-stats.shion.dev/api?username=NathanPunya&show_icons=true&hide_border=true&bg_color=F4F0E6&title_color=3D6F96&text_color=5A5548&icon_color=6B9B6E&ring_color=E6B84D" alt="NathanPunya's GitHub stats"/>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+    <img src="assets/stats.svg" alt="NathanPunya's GitHub stats"/>
   </picture>
 </p>
 
