@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import subprocess
@@ -51,23 +52,16 @@ OVERLAY = (
 )
 
 
-def still_for_github(svg: str) -> str:
+def still_for_github(svg: str, rank: dict) -> str:
     """GitHub renders README SVGs statically, so fade-in keyframes would hide the stats."""
     svg = re.sub(r"\.stagger\s*\{[^}]*\}", ".stagger { opacity: 1; }", svg)
     svg = re.sub(r"animation:[^;]+;", "animation: none;", svg)
-    rank = re.search(
-        r'data-testid="level-rank-icon">\s*([^<]+)\s*</text>',
-        svg,
-    )
-    if not rank:
-        raise RuntimeError("could not find rank label")
-    label = rank.group(1).strip()
     svg, n = re.subn(
         r'<g class="rank-text">[\s\S]*?</g>',
         (
             '<g class="rank-text" transform="translate(-10, 8)">'
             f'<text x="0" y="0" dy="0.35em" text-anchor="middle" '
-            f'data-testid="level-rank-icon">{label}</text>'
+            f'data-testid="level-rank-icon">{rank["level"]}</text>'
             "</g>"
         ),
         svg,
@@ -75,22 +69,29 @@ def still_for_github(svg: str) -> str:
     )
     if n != 1:
         raise RuntimeError("could not recenter rank label")
-    dash = re.search(
-        r"@keyframes rankAnimation.*?to \{\s*stroke-dashoffset:\s*([0-9.]+);",
+    svg = re.sub(
+        r"(Rank:\s*)[A-Z][+-]?",
+        rf"\g<1>{rank['level']}",
         svg,
-        re.S,
+        count=1,
     )
-    if dash:
-        svg = svg.replace(
-            "stroke-dasharray: 250;",
-            f"stroke-dasharray: 250;\n      stroke-dashoffset: {dash.group(1)};",
-            1,
-        )
+    dash = f"{rank['dashoffset']}"
+    svg = svg.replace(
+        "stroke-dasharray: 250;",
+        f"stroke-dasharray: 250;\n      stroke-dashoffset: {dash};",
+        1,
+    )
+    svg = re.sub(
+        r"(@keyframes rankAnimation[\s\S]*?to \{\s*stroke-dashoffset:\s*)[0-9.]+",
+        rf"\g<1>{dash}",
+        svg,
+        count=1,
+    )
     return svg
 
 
-def inject_grid(svg: str, stroke: str) -> str:
-    svg = still_for_github(svg.strip())
+def inject_grid(svg: str, stroke: str, rank: dict) -> str:
+    svg = still_for_github(svg.strip(), rank)
     svg = re.sub(r"(<svg[^>]*>)", r"\1" + DEFS.format(stroke=stroke), svg, count=1)
     svg, n = re.subn(
         r'(<rect\s+data-testid="card-bg"[\s\S]*?/>)',
@@ -116,14 +117,64 @@ def github_token() -> str:
     return subprocess.check_output(["gh", "auth", "token"], text=True).strip()
 
 
-def commits_including_private(token: str) -> int:
+def parse_card_stat(svg: str, testid: str) -> int:
+    match = re.search(rf'data-testid="{testid}"\s*>\s*([\d,]+)', svg)
+    if not match:
+        raise RuntimeError(f"could not parse {testid}")
+    return int(match.group(1).replace(",", ""))
+
+
+def exponential_cdf(x: float) -> float:
+    return 1 - 2**-x
+
+
+def log_normal_cdf(x: float) -> float:
+    return x / (1 + x)
+
+
+def calculate_rank(
+    *,
+    commits: int,
+    prs: int,
+    issues: int,
+    reviews: int,
+    stars: int,
+    followers: int,
+) -> dict:
+    """Same formula as github-readme-stats src/calculateRank.js (last-year commits)."""
+    total_weight = 2 + 3 + 1 + 1 + 4 + 1
+    percentile = (
+        1
+        - (
+            2 * exponential_cdf(commits / 250)
+            + 3 * exponential_cdf(prs / 50)
+            + 1 * exponential_cdf(issues / 25)
+            + 1 * exponential_cdf(reviews / 2)
+            + 4 * log_normal_cdf(stars / 50)
+            + 1 * log_normal_cdf(followers / 10)
+        )
+        / total_weight
+    ) * 100
+    thresholds = [1, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100]
+    levels = ["S", "A+", "A", "A-", "B+", "B", "B-", "C+", "C"]
+    level = levels[next(i for i, top in enumerate(thresholds) if percentile <= top)]
+    return {
+        "level": level,
+        "percentile": percentile,
+        "dashoffset": 2 * math.pi * 40 * (percentile / 100),
+    }
+
+
+def github_profile_stats(token: str) -> dict:
     payload = {
         "query": """
         query ($login: String!) {
           user(login: $login) {
+            followers { totalCount }
             contributionsCollection {
               totalCommitContributions
               restrictedContributionsCount
+              totalPullRequestReviewContributions
             }
           }
         }
@@ -144,11 +195,16 @@ def commits_including_private(token: str) -> int:
         body = json.loads(res.read().decode())
     if body.get("errors"):
         raise RuntimeError(body["errors"])
-    collection = body["data"]["user"]["contributionsCollection"]
-    return (
-        collection["totalCommitContributions"]
-        + collection["restrictedContributionsCount"]
-    )
+    user = body["data"]["user"]
+    collection = user["contributionsCollection"]
+    return {
+        "commits": (
+            collection["totalCommitContributions"]
+            + collection["restrictedContributionsCount"]
+        ),
+        "reviews": collection["totalPullRequestReviewContributions"],
+        "followers": user["followers"]["totalCount"],
+    }
 
 
 def patch_commits(svg: str, commits: int) -> str:
@@ -171,11 +227,23 @@ def patch_commits(svg: str, commits: int) -> str:
 
 def main() -> None:
     ASSETS.mkdir(exist_ok=True)
-    commits = commits_including_private(github_token())
+    profile = github_profile_stats(github_token())
     for card in CARDS:
-        svg = patch_commits(inject_grid(fetch(card["url"]), card["grid"]), commits)
+        raw = fetch(card["url"])
+        rank = calculate_rank(
+            commits=profile["commits"],
+            prs=parse_card_stat(raw, "prs"),
+            issues=parse_card_stat(raw, "issues"),
+            reviews=profile["reviews"],
+            stars=parse_card_stat(raw, "stars"),
+            followers=profile["followers"],
+        )
+        svg = patch_commits(inject_grid(raw, card["grid"], rank), profile["commits"])
         card["out"].write_text(svg)
-        print(f"wrote {card['out'].relative_to(ROOT)} commits={commits}")
+        print(
+            f"wrote {card['out'].relative_to(ROOT)} "
+            f"commits={profile['commits']} rank={rank['level']}"
+        )
 
 
 if __name__ == "__main__":
