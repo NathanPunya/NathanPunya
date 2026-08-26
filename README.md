@@ -97,7 +97,6 @@
   <a href="https://github.com/NathanPunya?tab=repositories&language=typescript"><img src="https://img.shields.io/badge/TypeScript-5B8EB5?style=flat-square&logo=typescript&logoColor=F4F0E6" alt="TypeScript"/></a>
   <a href="https://github.com/NathanPunya?tab=repositories&language=swift"><img src="https://img.shields.io/badge/Swift-D96B5C?style=flat-square&logo=swift&logoColor=F4F0E6" alt="Swift"/></a>
   <a href="https://github.com/NathanPunya?tab=repositories&language=go"><img src="https://img.shields.io/badge/Go-4A7FA3?style=flat-square&logo=go&logoColor=F4F0E6" alt="Go"/></a>
-  <a href="https://github.com/NathanPunya?tab=repositories&language=shell"><img src="https://img.shields.io/badge/Linux-C8C5BC?style=flat-square&logo=linux&logoColor=2A2A2A" alt="Linux"/></a>
   <a href="https://github.com/NathanPunya?tab=repositories&language=html"><img src="https://img.shields.io/badge/HTML-D96B5C?style=flat-square&logo=html5&logoColor=F4F0E6" alt="HTML"/></a>
   <a href="https://github.com/NathanPunya?tab=repositories&language=css"><img src="https://img.shields.io/badge/CSS-5B8EB5?style=flat-square&logo=css3&logoColor=F4F0E6" alt="CSS"/></a>
   <a href="https://github.com/NathanPunya/bruin-hot-take"><img src="https://img.shields.io/badge/React-A3C9DC?style=flat-square&logo=react&logoColor=2A2A2A" alt="React"/></a>
