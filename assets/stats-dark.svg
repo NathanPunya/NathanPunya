@@ -15,7 +15,7 @@
   </clipPath>
 </defs>
         <title id="titleId">Nathan Punyataweekul's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 1, Total Commits  (last year) : 450 Total PRs: 62, Total Issues: 0, Contributed to (last year): 0</desc>
+        <desc id="descId">Total Stars Earned: 1, Total Commits  (last year) : 451 Total PRs: 62, Total Issues: 0, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -144,13 +144,7 @@
           transform="translate(390.5, 47.5)">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-          
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          C+
-        </text>
-      
-        </g>
+        <g class="rank-text" transform="translate(-10, 8)"><text x="0" y="0" dy="0.35em" text-anchor="middle" data-testid="level-rank-icon">C+</text></g>
       </g>
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
@@ -181,7 +175,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >450</text>
+      >451</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">

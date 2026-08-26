@@ -55,6 +55,26 @@ def still_for_github(svg: str) -> str:
     """GitHub renders README SVGs statically, so fade-in keyframes would hide the stats."""
     svg = re.sub(r"\.stagger\s*\{[^}]*\}", ".stagger { opacity: 1; }", svg)
     svg = re.sub(r"animation:[^;]+;", "animation: none;", svg)
+    rank = re.search(
+        r'data-testid="level-rank-icon">\s*([^<]+)\s*</text>',
+        svg,
+    )
+    if not rank:
+        raise RuntimeError("could not find rank label")
+    label = rank.group(1).strip()
+    svg, n = re.subn(
+        r'<g class="rank-text">[\s\S]*?</g>',
+        (
+            '<g class="rank-text" transform="translate(-10, 8)">'
+            f'<text x="0" y="0" dy="0.35em" text-anchor="middle" '
+            f'data-testid="level-rank-icon">{label}</text>'
+            "</g>"
+        ),
+        svg,
+        count=1,
+    )
+    if n != 1:
+        raise RuntimeError("could not recenter rank label")
     dash = re.search(
         r"@keyframes rankAnimation.*?to \{\s*stroke-dashoffset:\s*([0-9.]+);",
         svg,
