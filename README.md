@@ -68,13 +68,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/NathanPunya">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/btn-github-dark.svg">
-      <img src="assets/btn-github.svg" alt="GitHub" height="52"/>
-    </picture>
-  </a>
-  &nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/nathan-punyataweekul">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg">
